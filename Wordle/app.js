@@ -2,7 +2,19 @@ const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.key-container')
 const messageDisplay = document.querySelector('.message-container')
 
-const wordle = 'SUPER'
+
+const wordleList = ['close',
+    'slide','total','drive','start','smell','metal','grant',
+    'humor','dough','robot','enemy','carry','stuff',
+    'essay','shape','error','crown','great','pause',
+    'grave','loose','alarm','bless','trait','ridge',
+    'wrist','thigh','asset','opera','adult','brand',
+    'frame','suite','creep','ghost','grain','glory',
+    'cream','funny','ferry','piano','uncle','final',
+    'tired','cabin','vague','carve','young','crude']
+
+const wordle = wordleList[Math.floor(Math.random() * wordleList.length)].toUpperCase()
+//const wordle = 'SUPER'
 const keys = [
     'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<<',
 ]
